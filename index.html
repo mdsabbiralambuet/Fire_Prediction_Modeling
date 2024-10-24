@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fire Accident Prediction by Location of Dhaka City Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fire Accident Prediction by Location of Dhaka City Corporation</h1>
+        <form onsubmit="onSubmitForm(); return false;">
+            <label for="location">Select Location:</label>
+            <select id="location" required>
+                <option value="Demra">Demra</option>
+                <option value="Hazaribagh">Hazaribagh</option>
+                <option value="Jatrabari">Jatrabari</option>
+                <option value="Kilgoan">Kilgoan</option>
+                <option value="Lalbagh">Lalbagh</option>
+                <option value="Motijheel">Motijheel</option>
+                <option value="Ramna">Ramna</option>
+                <option value="Sadarghat">Sadarghat</option>
+            </select><br><br>
+
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" step="0.1" required><br><br>
+            
+            <label for="humidity">Humidity (%):</label>
+            <input type="number" id="humidity" step="0.1" required><br><br>
+            
+            <label for="precip">Precipitation (mm):</label>
+            <input type="number" id="precip" step="0.1" required><br><br>
+            
+            <label for="wind">Wind Speed (m/s):</label>
+            <input type="number" id="wind" step="0.1" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date"><br><br>
+
+            <input type="submit" value="Predict">
+        </form>
+        <div class="result" id="result">Prediction result will appear here.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
